@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Адинур — студент IT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#home" class="logo">Адинур</a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="Главное меню">
+      <a href="#home">Главная</a>
+      <a href="#about">Обо мне</a>
+      <a href="#work">Работа</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <div class="social">
+      <a href="https://instagram.com/user_2314111" aria-label="Instagram">IG</a>
+      <a href="https://t.me/adinurjeks" aria-label="Telegram">TG</a>
+    </div>
+    <button class="theme-btn" id="themeBtn" aria-label="Сменить тему">☾</button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__text">
+        <p class="hero__hello">Привет, я Адинур,</p>
+        <h1>Студент<br>IT</h1>
+        <p class="hero__place">учусь в колледже Ала-Тоо.</p>
+        <a href="#contact" class="btn">Связаться</a>
+      </div>
+      <div class="hero__photo">
+        <span class="plus" aria-hidden="true">+<br>+</span>
+        <span class="lines" aria-hidden="true">////</span>
+        <div class="blob">
+          <img src="adinurphoto.jpeg" alt="Фото Адинура">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <h2 class="big-title">обо мне.</h2>
+      <p class="section-text">Меня зовут Адинур, я студент второго курса колледжа Ала-Тоо. Меня привлекает мир технологий, поэтому я решил связать свою учёбу с IT: изучаю программирование и учусь создавать сайты.</p>
+
+      <ul class="timeline">
+        <li>
+          <h3>Английский язык — B2</h3>
+          <p>Знаю английский на уровне B2: читаю документацию, смотрю обучающие видео и могу общаться на повседневные и учебные темы.</p>
+        </li>
+        <li>
+          <h3>HTML и CSS</h3>
+          <p>Изучаю HTML и CSS: структуру страниц, ссылки, изображения и формы, а также цвета, шрифты, отступы и адаптивную вёрстку.</p>
+        </li>
+        <li>
+          <h3>JavaScript и Java</h3>
+          <p>Изучаю JavaScript, чтобы делать сайты интерактивными, и Java — основы программирования: переменные, условия, циклы и ООП.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- WORK -->
+    <section class="work" id="work">
+      <h2 class="big-title">работа.</h2>
+      <p class="section-text">Сейчас я не работаю, а учусь. Моя работа — это учёба и изучение IT. Каждый день я учусь, практикуюсь и стараюсь стать лучше, чтобы в будущем уверенно начать карьеру в IT.</p>
+
+      <div class="work__grid">
+        <article class="case" data-title="Учёба в колледже" data-date="Колледж Ала-Тоо, 2 курс"
+                 data-text="Я учусь на втором курсе колледжа Ала-Тоо. Здесь я получаю базу знаний, учусь работать в команде, соблюдать сроки и доводить задания до конца. Для меня сейчас это главное дело.">
+          <button type="button" class="case__img" aria-label="Открыть подробности: учёба в колледже"><img src="img/work1.jpg" alt="Учёба в колледже"></button>
+          <span class="case__date">Колледж Ала-Тоо, 2 курс</span>
+          <h3>Учёба в колледже</h3>
+          <p>Я студент второго курса колледжа Ала-Тоо. Учёба — моя главная работа на сегодняшний день.</p>
+        </article>
+        <article class="case" data-title="Изучение IT" data-date="Сейчас"
+                 data-text="Каждый день я трачу время на изучение IT: HTML и CSS для вёрстки сайтов, JavaScript для интерактивности и Java для основ программирования. Смотрю уроки, читаю материалы и пишу свой код. Этот сайт — часть моей практики.">
+          <button type="button" class="case__img" aria-label="Открыть подробности: изучение IT"><img src="img/work2.jpg" alt="Изучение IT"></button>
+          <span class="case__date">Сейчас</span>
+          <h3>Изучение IT</h3>
+          <p>Изучаю HTML, CSS, JavaScript и Java: смотрю уроки, читаю материалы и пишу свой код.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <h2 class="big-title">контакты.</h2>
+      <div class="contact__row">
+        <div class="contact__img"><img src="img/contact.jpg" alt="Ручка на конверте"></div>
+        <div class="contact__info">
+          <p>Хотите пообщаться, обсудить учёбу, IT или предложить проект? Напишите или позвоните мне — быстрее всего ответ придёт в Telegram или Instagram.</p>
+          <ul class="contact__links">
+            <li><a href="https://instagram.com/user_2314111">Instagram: user_2314111</a></li>
+            <li><a href="tel:226473000">Телефон: 226 473 000</a></li>
+            <li><a href="https://t.me/adinurjeks">Telegram: @adinurjeks</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <form class="form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" autocomplete="name">
+          <span class="error" id="nameError" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email">
+          <span class="error" id="emailError" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <span class="error" id="messageError" role="alert"></span>
+        </div>
+        <button type="submit" class="btn">Отправить</button>
+        <p class="form__success" id="formSuccess" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Адинур</p>
+    <a href="#home">Наверх</a>
+  </footer>
+
+  <!-- Окно с подробностями -->
+  <dialog class="modal" id="modal" aria-labelledby="modalTitle">
+    <button type="button" class="modal__close" id="modalClose" aria-label="Закрыть">×</button>
+    <img id="modalImg" src="" alt="">
+    <p class="modal__date" id="modalDate"></p>
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
