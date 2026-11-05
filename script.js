@@ -10,7 +10,7 @@ burger.addEventListener('click', () => setMenu(!nav.classList.contains('open')))
 nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
 
 
-/* ===== 2. Светлая / тёмная тема ===== */
+/* меняется тема черная и белая */
 const themeBtn = document.getElementById('themeBtn');
 const root = document.documentElement;
 
@@ -72,7 +72,7 @@ form.addEventListener('submit', e => {
 });
 
 
-/* ===== 4. Модальное окно кейса ===== */
+/* ===== 4. Модальное окно кейса */
 const modal = document.getElementById('modal');
 
 document.querySelectorAll('.case').forEach(card => {
